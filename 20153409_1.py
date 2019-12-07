@@ -10,7 +10,7 @@ args = parser.parse_args()
 
 input_list = os.listdir(args.input_dir)
 
-model = keras.models.load_model('20153409_01.h5')
+model = keras.models.load_model('20153409_1.h5')
 for i in input_list:
   if(i[0]=='.'): continue
   img = cv2.imread(args.input_dir+'/'+i)
