@@ -1,6 +1,7 @@
 from tensorflow import keras
 import h5py
 import argparse
+import os
 
 parser = argparse.ArgumentParser(description='python 20153409_3.py --input_dir ./input_data_folder --output_dir ./output_data_folder')
 parser.add_argument('--input_dir', type=str, help='put an input directory')
