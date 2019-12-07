@@ -10,7 +10,7 @@ args = parser.parse_args()
 
 input_list = os.listdir(args.input_dir)
 
-model = keras.models.load_model('/content/gdrive/My Drive/20153409_01.h5')
+model = keras.models.load_model('20153409_01.h5')
 for i in input_list:
   img = args.input_dir+i
   predicted_steers = model.predict(img[None, :, :, :].transpose(0, 3, 1, 2))[0][0]
