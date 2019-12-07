@@ -20,4 +20,5 @@ for i in input_list:
   predicted_steers = model.predict(img[None, :, :, :].transpose(0, 3, 1, 2))[0][0]
   print(round(predicted_steers,5))
   f.write(str(round(predicted_steers,5))+'\n')
+
 f.close()
